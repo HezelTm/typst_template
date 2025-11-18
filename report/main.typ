@@ -3,7 +3,7 @@
 // License MIT
 // -------------------------------------------------------------------
 // Author : Dimitri Julmy <dev@dimitri-julmy.com>
-// Date   : 27.11.2025
+// Date   : 28.11.2025
 // -------------------------------------------------------------------
 // Report Template - main.typ
 // -------------------------------------------------------------------
@@ -27,7 +27,7 @@
 // Text configuration
 #set text(
   font: "Roboto",
-  lang: "fr",
+  lang: metadata.lang,
   region: "ch",
   size: 11pt,
   weight: "regular",
