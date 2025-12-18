@@ -1,18 +1,36 @@
-// -------------------------------------------------------------------
-// Copyright © 2025 Dimitri Julmy
-// License MIT
-// -------------------------------------------------------------------
-// Author : Dimitri Julmy <dev@dimitri-julmy.com>
-// Date   : 28.11.2025
-// -------------------------------------------------------------------
-// Minutes Meetings Template - main.typ
-// -------------------------------------------------------------------
+/*
+ * --------------------------------------------------------------------------------
+ * File: /home/hezeltm/Projects/typst_template/minutes_meeting/main.typ
+ * Project: /home/hezeltm/Projects/typst_template/minutes_meeting
+ * Created Date: Tuesday, November 18th 2025, 7:51:03 pm
+ * Author: Dimitri Julmy, dev@dimitri-julmy.com
+ * --------------------------------------------------------------------------------
+ * Last Modified: Thu Dec 18 2025
+ * Modified By: Dimitri Julmy
+ * --------------------------------------------------------------------------------
+ * Copyright (c) 2025 Dimitri Julmy
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * --------------------------------------------------------------------------------
+ */
+
 
 // ---------- Imports
 
-// Values
-#import "./values/metadata.typ": colors, tr_pv
-#import "./values/minute_data.typ": actors, minute, talks, tasks
+#import "./data/metadata.typ": colors
+#import "./data/translation.typ": tr_pv
+#import "./data/minute_data.typ": actors, minute, talks, tasks
 
 // ---------- Document configuration 
 
@@ -28,8 +46,9 @@
 )
 
 // Page header
+#let logo_path = "/assets/" + str(minute.logo)
 #set page(
-  header: align(center)[#image("assets/logo_heia.svg", width: 80%)]
+  header: align(center)[#image(logo_path, width: 30%)]
 )
 
 // Highlight documents links
@@ -91,7 +110,6 @@
   #t_pv.insert(k, value)
 ]
 
-
 // ---------- Content 
 
 = #t_pv.meeting_minutes_of #minute.seance_date.display()
@@ -123,7 +141,6 @@
   fill: (x, y) =>
     if x == 0 {colors.c3}
 )
-
 
 #table(
   columns: (22%, 78%),
