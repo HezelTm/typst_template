@@ -1,19 +1,34 @@
-// -------------------------------------------------------------------
-// Copyright © 2025 Dimitri Julmy
-// License MIT
-// -------------------------------------------------------------------
-// Author : Dimitri Julmy <dev@dimitri-julmy.com>
-// Date   : 27.11.2025
-// -------------------------------------------------------------------
-// Report Template - table_contents.typ
-// -------------------------------------------------------------------
+/*
+ * --------------------------------------------------------------------------------
+ * File: /home/hezeltm/Projects/typst_template/report/tables/table_contents.typ
+ * Project: /home/hezeltm/Projects/typst_template/report/tables
+ * Created Date: Monday, November 17th 2025, 6:53:51 pm
+ * Author: Dimitri Julmy, dev@dimitri-julmy.com
+ * --------------------------------------------------------------------------------
+ * Last Modified: Thu Dec 18 2025
+ * Modified By: Dimitri Julmy
+ * --------------------------------------------------------------------------------
+ * Copyright (c) 2025 Dimitri Julmy
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * --------------------------------------------------------------------------------
+ */
 
 // ---------- Imports
 
-// Third-party
-
-// Values
-#import "../datas/metadata.typ": tr_chapters, metadata
+#import "../metadata/metadata.typ": metadata
+#import "../metadata/translation.typ": tr_chapters
 
 // ---------- Table of Contents
 
@@ -34,7 +49,6 @@
 ]
 
 // Format the Table of Contents
-
 #outline(
   title: t_chap.table_content,
   depth: 2,

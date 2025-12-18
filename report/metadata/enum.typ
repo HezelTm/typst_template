@@ -1,8 +1,8 @@
 /*
  * --------------------------------------------------------------------------------
- * File: /home/hezeltm/Projects/typst_template/report/sections/context.typ
- * Project: /home/hezeltm/Projects/typst_template/report/sections
- * Created Date: Monday, November 17th 2025, 6:53:51 pm
+ * File: /home/hezeltm/Projects/typst_template/report/metadata/enum.typ
+ * Project: /home/hezeltm/Projects/typst_template/report/metadata
+ * Created Date: Wednesday, December 10th 2025, 8:53:39 am
  * Author: Dimitri Julmy, dev@dimitri-julmy.com
  * --------------------------------------------------------------------------------
  * Last Modified: Thu Dec 18 2025
@@ -26,10 +26,20 @@
  */
 
 
-// ---------- Context
+// ---------- Enums
 
-=== TODO (Remove) - Qu'est-ce que le Contexte
+#let lang = (
+  en: "en",
+  fr: "fr",
+)
 
-Vous aurez présenté le contexte dans l'introduction et vous pouvez développer dans ce chapitre. Expliquez pourquoi vous faites ce projet et précisez les besoins que vous couvrez ou les problèmes que vous résolvez.
+#let gender = (
+  m: "male",
+  f: "female",
+)
 
-source : #link("https://dev.to/supcik/guide-de-redaction-de-rapports-pour-les-etudiants-2g2k")[Guide de rédaction de rapports pour les étudiants]
+#let title = (
+  eng: "Engineer",
+  doc: "Doctor",
+  prf: "Professor"
+)
