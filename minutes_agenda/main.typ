@@ -1,18 +1,36 @@
-// -------------------------------------------------------------------
-// Copyright © 2025 Dimitri Julmy
-// License MIT
-// -------------------------------------------------------------------
-// Author : Dimitri Julmy <dev@dimitri-julmy.com>
-// Date   : 28.11.2025
-// -------------------------------------------------------------------
-// Agenda Minutes Meetings Template - main.typ
-// -------------------------------------------------------------------
+/*
+ * --------------------------------------------------------------------------------
+ * File: /home/hezeltm/Projects/typst_template/minutes_agenda/main.typ
+ * Project: /home/hezeltm/Projects/typst_template/minutes_agenda
+ * Created Date: Tuesday, November 18th 2025, 8:04:27 pm
+ * Author: Dimitri Julmy, dev@dimitri-julmy.com
+ * --------------------------------------------------------------------------------
+ * Last Modified: Thu Dec 18 2025
+ * Modified By: Dimitri Julmy
+ * --------------------------------------------------------------------------------
+ * Copyright (c) 2025 Dimitri Julmy
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * --------------------------------------------------------------------------------
+ */
+
 
 // ---------- Imports
 
-// Values
-#import "./values/metadata.typ": colors, tr_agenda
-#import "./values/agenda_data.typ": actors, agenda, goals
+#import "data/styling.typ": colors
+#import "data/translation.typ": tr_agenda
+#import "data/agenda_data.typ": actors, agenda, goals
 
 // ---------- Document configuration 
 
@@ -40,8 +58,9 @@
 )
 
 // Page header
+#let logo_path = "/assets/" + str(agenda.logo)
 #set page(
-  header: align(center)[#image("assets/heia_logo.png", width: 70%)]
+  header: align(center)[#image(logo_path, width: 30%)]
 )
 
 // Page numbering
@@ -118,7 +137,6 @@
   fill: (x, y) =>
     if x == 0 {colors.c3}
 )
-
 
 #table(
   columns: (22%, 78%),

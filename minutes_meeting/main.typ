@@ -28,7 +28,7 @@
 
 // ---------- Imports
 
-#import "./data/metadata.typ": colors
+#import "data/styling.typ": colors
 #import "./data/translation.typ": tr_pv
 #import "./data/minute_data.typ": actors, minute, talks, tasks
 

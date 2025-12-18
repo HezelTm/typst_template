@@ -1,8 +1,8 @@
 /*
  * --------------------------------------------------------------------------------
- * File: /home/hezeltm/Projects/typst_template/minutes_meeting/values/metadata.typ
- * Project: /home/hezeltm/Projects/typst_template/minutes_meeting/values
- * Created Date: Tuesday, November 18th 2025, 7:51:03 pm
+ * File: /home/hezeltm/Projects/typst_template/minutes_agenda/values/translation.typ
+ * Project: /home/hezeltm/Projects/typst_template/minutes_agenda/values
+ * Created Date: Thursday, December 18th 2025, 8:23:37 pm
  * Author: Dimitri Julmy, dev@dimitri-julmy.com
  * --------------------------------------------------------------------------------
  * Last Modified: Thu Dec 18 2025
@@ -26,14 +26,12 @@
  */
 
 
-// ---------- Colors
+// ---------- Translation
 
-#let tr_pv = (
-  meeting_minutes_of: ( fr: "PV de séance du", en: "Meeting Minutes of" ),
+#let tr_agenda = (
+  meeting_agenda_of: ( fr: "Agenda de séance du", en: "Meeting Agenda of" ),
   meeting_details: ( fr: "Détails de la séance", en: "Meeting Details" ),
-  agenda: ( fr: "Ordre du jour", en: "Agenda" ),
-  discussions: ( fr: "Discussions", en: "Discussions" ),
-  key_points: ( fr: "Points Essentiels", en: "Key Points" ),
+  session_goals: ( fr: "Objectifs de la séance", en: "Session Objectives" ),
   location: ( fr: "Lieu", en: "Location" ),
   room: ( fr: "Salle", en: "Room" ),
   date: ( fr: "Date", en: "Date" ),
@@ -44,18 +42,4 @@
   excused: ( fr: "Excusé.es", en: "Excused" ),
   duration_min: ( fr: "Durée [min.]", en: "Duration [min.]" ),
   objectives: ( fr: "Objectifs", en: "Objectives" ),
-  decision_taken: ( fr: "Décision.s prise.s", en: "Decision(s) Taken" ),
-  objective_s: ( fr: "Objectif.s", en: "Objective(s)" ),
-  decision_s: ( fr: "Décision.s", en: "Decision(s)" ),
-  tasks: ( fr: "Tâche.s", en: "Task(s)" ),
-  description: ( fr: "Description", en: "Description" ),
-  assignee: ( fr: "Exécutant", en: "Assignee" ),
-  due_date: ( fr: "Échéance", en: "Due Date" ),
-)
-
-#let colors = (
-  c1: rgb(0, 31, 63),
-  c2: rgb(58, 109, 140),
-  c3: rgb(106, 154, 176),
-  c4: rgb(234, 216, 177),
 )

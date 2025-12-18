@@ -1,6 +1,6 @@
 /*
  * --------------------------------------------------------------------------------
- * File: /home/hezeltm/Projects/typst_template/minutes_meeting/data/minute_data.typ
+ * File: /home/hezeltm/Projects/typst_template/minutes_meeting/data/styling.typ
  * Project: /home/hezeltm/Projects/typst_template/minutes_meeting/data
  * Created Date: Tuesday, November 18th 2025, 7:51:03 pm
  * Author: Dimitri Julmy, dev@dimitri-julmy.com
@@ -26,69 +26,11 @@
  */
 
 
-// ---------- Agenda data
+// ---------- Colors
 
-#let minute = (
-  lang: "en",
-  logo: "logo_hes-so.png",
-  project_scope: [Project scope],
-  project_name: [Project name],
-  seance_date: datetime(year: 2025, month: 12, day: 18),
-  location_name: "Location name",
-  location_street: "Street 1",
-  location_locality: "Locality name",
-  location_npa: "3333",
-  location_room: "Room 101",
-  schedule: "09:30 - 10:20",
-)
-
-// ---------- Actors
-
-#let actors = (
-  (
-    firstname: "Dimitri",
-    lastname: "Julmy",
-    gender: "m",
-    isChairman: true,
-    isScribe: true,
-    excused: false,
-  ),
-  (
-    firstname: "John",
-    lastname: "Doe",
-    gender: "m",
-    isChairman: false,
-    isScribe: false,
-    excused: false,
-  ),
-)
-
-#let talks = (
-  (
-    name: [TODO 1],
-    desc: ([-]),
-    decision: ([-]),
-    duration: 10,
-  ),
-  (
-    name: [TODO 2],
-    desc: ([-]),
-    decision: ([-]),
-    duration: 10,
-  ),
-  (
-    name: [TODO 3],
-    desc: ([-]),
-    decision: ([-]),
-    duration: 10,
-  ),
-)
-
-#let tasks = (
-  (
-    name: [-],
-    desc: [-],
-    date_due: datetime(year: 2025, month: 12, day: 18),
-    exec: [Dimitri Julmy],
-  ),
+#let colors = (
+  c1: rgb(0, 31, 63),
+  c2: rgb(58, 109, 140),
+  c3: rgb(106, 154, 176),
+  c4: rgb(234, 216, 177),
 )

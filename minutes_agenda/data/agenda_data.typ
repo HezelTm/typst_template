@@ -1,8 +1,8 @@
 /*
  * --------------------------------------------------------------------------------
- * File: /home/hezeltm/Projects/typst_template/minutes_meeting/data/minute_data.typ
- * Project: /home/hezeltm/Projects/typst_template/minutes_meeting/data
- * Created Date: Tuesday, November 18th 2025, 7:51:03 pm
+ * File: /home/hezeltm/Projects/typst_template/minutes_agenda/data/agenda_data.typ
+ * Project: /home/hezeltm/Projects/typst_template/minutes_agenda/data
+ * Created Date: Tuesday, November 18th 2025, 8:04:27 pm
  * Author: Dimitri Julmy, dev@dimitri-julmy.com
  * --------------------------------------------------------------------------------
  * Last Modified: Thu Dec 18 2025
@@ -28,7 +28,7 @@
 
 // ---------- Agenda data
 
-#let minute = (
+#let agenda = (
   lang: "en",
   logo: "logo_hes-so.png",
   project_scope: [Project scope],
@@ -63,32 +63,17 @@
   ),
 )
 
-#let talks = (
+#let goals = (
   (
-    name: [TODO 1],
-    desc: ([-]),
-    decision: ([-]),
+    desc: [TODO 1],
     duration: 10,
   ),
   (
-    name: [TODO 2],
-    desc: ([-]),
-    decision: ([-]),
+    desc: [TODO 2],
     duration: 10,
   ),
   (
-    name: [TODO 3],
-    desc: ([-]),
-    decision: ([-]),
+    desc: [TODO 3],
     duration: 10,
-  ),
-)
-
-#let tasks = (
-  (
-    name: [-],
-    desc: [-],
-    date_due: datetime(year: 2025, month: 12, day: 18),
-    exec: [Dimitri Julmy],
   ),
 )
