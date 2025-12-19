@@ -1,11 +1,11 @@
 /*
  * --------------------------------------------------------------------------------
- * File: /home/hezeltm/Projects/typst_template/report/tables/table_versions.typ
- * Project: /home/hezeltm/Projects/typst_template/report/tables
+ * File: /home/hezeltm/Projects/typst_template/report/section/acknowledgements.typ
+ * Project: /home/hezeltm/Projects/typst_template/report/section
  * Created Date: Monday, November 17th 2025, 6:53:51 pm
  * Author: Dimitri Julmy, dev@dimitri-julmy.com
  * --------------------------------------------------------------------------------
- * Last Modified: Thu Dec 18 2025
+ * Last Modified: Fri Dec 19 2025
  * Modified By: Dimitri Julmy
  * --------------------------------------------------------------------------------
  * Copyright (c) 2025 Dimitri Julmy
@@ -26,32 +26,10 @@
  */
 
 
-// ---------- Imports
+// ---------- Acknowledgements
 
-#import "../metadata/metadata.typ": versions, colors
+=== TODO (Remove) - Qu'est-ce que les Remerciements
 
-// ---------- Table of Versions
+N'oubliez pas de remercier les personnes qui vous ont aidé pour ce projet, ça fait toujours plaisir. Remerciez les superviseurs, les mandants, les experts ainsi que la famille ou vos amis qui ont corrigé vos fautes d'orthographe.
 
-// Apply styling to the header
-#show table.cell.where(y: 0):set text(weight: "medium", size: 13pt, fill: white)
-
-// Apply styling to the frame
-#let frame(stroke) = (x, y) => (
-  left: if x == 1 {1pt},
-  right: if x == 1 {1pt},
-  top: if y == 0 or y == 1 {2pt},
-  bottom: if y == 0 {2pt} else if y == versions.len() {0pt} else {1pt},
-)
-
-// Display versions data
-#table(
-  columns: (15%, 15%, 70%),
-  align: (x,y) => if x == 0 {center + horizon} else if x == 1 {horizon + center} else if x == 2 {horizon},
-  inset: 8pt,
-  fill: (_, y) => if y == 0 {colors.c3},
-  stroke: frame(colors.c1),
-  table.header[Version][Date][Modification],
-  ..for (version, date, changes) in versions {
-    (version, date.display(), changes)
-  }
-)
+source : #link("https://dev.to/supcik/guide-de-redaction-de-rapports-pour-les-etudiants-2g2k")[Guide de rédaction de rapports pour les étudiants]

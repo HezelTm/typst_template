@@ -1,11 +1,11 @@
 /*
  * --------------------------------------------------------------------------------
- * File: /home/hezeltm/Projects/typst_template/report/sections/introduction.typ
- * Project: /home/hezeltm/Projects/typst_template/report/sections
+ * File: /home/hezeltm/Projects/typst_template/report/section/conclusion.typ
+ * Project: /home/hezeltm/Projects/typst_template/report/section
  * Created Date: Monday, November 17th 2025, 6:53:51 pm
  * Author: Dimitri Julmy, dev@dimitri-julmy.com
  * --------------------------------------------------------------------------------
- * Last Modified: Thu Dec 18 2025
+ * Last Modified: Fri Dec 19 2025
  * Modified By: Dimitri Julmy
  * --------------------------------------------------------------------------------
  * Copyright (c) 2025 Dimitri Julmy
@@ -26,12 +26,14 @@
  */
 
 
-// ---------- Introduction
+// ---------- Conclusion
 
-=== TODO (Remove) - Qu'est-ce que l'Introduction
+=== TODO (Remove) - Qu'est-ce que la conclusion
 
-L'introduction présente le contexte ou l'historique des travaux déjà faits sur le sujet. Vous décrivez dans ce chapitre la nature du problème ainsi que son importance.
+La conclusion se concentre sur les résultats de votre projet. Vous écrivez comment vous avez répondu aux attentes du mandant et vous revenez sur les objectifs initiaux. Si vous n'avez pas atteint les objectifs, expliquez pourquoi et décrivez ce que vous avez fait à la place.
 
-Il est intéressant d'également mentionner les objectifs dans l'introduction. Faites bien attention de ne pas confondre objectif avec activité. Un objectif est un délivrable que vous fournissez à la fin du projet (par exemple "un prototype" ou "une application). Vous décrirez l'objectif par un substantif (un nom). Une activité est une action qui vous permet d'atteindre l'objectif (par exemple "faire l'état de l'art", "développer" ou "tester"). L'activité est décrite par un verbe.
+Pensez à bien soigner la conclusion. Certains lecteurs avertis commencent par lire le sommaire exécutif, puis ils lisent la conclusion, et s’ils aiment ce qu'ils lisent, alors ils lisent l'ensemble de votre rapport.
+
+Complétez ce chapitre avec une conclusion personnelle. Faites preuve d'imagination et évitez de commencer par "j'ai bien aimé ce projet..." Vous pouvez aussi parler de comment vous avez géré le projet et dire ce que vous feriez différemment. N'hésitez pas à écrire cette partie à la première personne et à écrire "Je ..." 
 
 source : #link("https://dev.to/supcik/guide-de-redaction-de-rapports-pour-les-etudiants-2g2k")[Guide de rédaction de rapports pour les étudiants]

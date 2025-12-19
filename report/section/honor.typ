@@ -1,11 +1,11 @@
 /*
  * --------------------------------------------------------------------------------
- * File: /home/hezeltm/Projects/typst_template/report/sections/analysis.typ
- * Project: /home/hezeltm/Projects/typst_template/report/sections
+ * File: /home/hezeltm/Projects/typst_template/report/section/honor.typ
+ * Project: /home/hezeltm/Projects/typst_template/report/section
  * Created Date: Monday, November 17th 2025, 6:53:51 pm
  * Author: Dimitri Julmy, dev@dimitri-julmy.com
  * --------------------------------------------------------------------------------
- * Last Modified: Thu Dec 18 2025
+ * Last Modified: Fri Dec 19 2025
  * Modified By: Dimitri Julmy
  * --------------------------------------------------------------------------------
  * Copyright (c) 2025 Dimitri Julmy
@@ -26,10 +26,14 @@
  */
 
 
-// ---------- Analysis
+// ---------- Imports
 
-=== TODO (Remove) - Qu'est-ce que l'Analyse
+#import "../data/metadata.typ" : authors
 
-Dans l'analyse, vous faites l'état de l'art dans le domaine de votre projet. Vous étudiez les outils et les "frameworks" disponibles et vous étudiez ce qui a déjà été fait. Vous prenez en compte les contraintes du projet et vous comparez les options. À la fin de l'analyse, le lecteur doit être convaincu que vous connaissez votre sujet et que vous avez su faire les bons choix.
+// ---------- Declaration of honor
 
-source : #link("https://dev.to/supcik/guide-de-redaction-de-rapports-pour-les-etudiants-2g2k")[Guide de rédaction de rapports pour les étudiants]
+Je, soussigné, #authors.first().firstname #authors.first().lastname, déclare sur l’honneur que le travail rendu est le fruit d’un travail personnel. Je certifie ne pas avoir eu recours au plagiat ou à toutes autre forme de fraude. Toutes les sources d’information utilisées et les citations d’auteur ont été clairement mentionnées.
+
+#authors.first().locality, le #datetime.today().display("[day].[month].[year]").
+
+TODO ajouter la signature

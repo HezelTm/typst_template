@@ -1,11 +1,11 @@
 /*
  * --------------------------------------------------------------------------------
- * File: /home/hezeltm/Projects/typst_template/report/sections/honor.typ
- * Project: /home/hezeltm/Projects/typst_template/report/sections
+ * File: /home/hezeltm/Projects/typst_template/report/table/table_illustrations.typ
+ * Project: /home/hezeltm/Projects/typst_template/report/table
  * Created Date: Monday, November 17th 2025, 6:53:51 pm
  * Author: Dimitri Julmy, dev@dimitri-julmy.com
  * --------------------------------------------------------------------------------
- * Last Modified: Thu Dec 18 2025
+ * Last Modified: Fri Dec 19 2025
  * Modified By: Dimitri Julmy
  * --------------------------------------------------------------------------------
  * Copyright (c) 2025 Dimitri Julmy
@@ -25,15 +25,23 @@
  * --------------------------------------------------------------------------------
  */
 
-
 // ---------- Imports
 
-#import "../metadata/metadata.typ" : authors
+#import "../data/metadata.typ": colors
 
-// ---------- Declaration of honor
+// ---------- Table of Illustrations
 
-Je, soussigné, #authors.first().firstname #authors.first().lastname, déclare sur l’honneur que le travail rendu est le fruit d’un travail personnel. Je certifie ne pas avoir eu recours au plagiat ou à toutes autre forme de fraude. Toutes les sources d’information utilisées et les citations d’auteur ont été clairement mentionnées.
+// Primary Heading format in the table
+#show outline.entry.where(level: 1): it => {
+  v(10pt, weak: true)
+  text(
+    size: 13pt,
+    weight: "semibold",
+    it
+  )
+}
 
-#authors.first().locality, le #datetime.today().display("[day].[month].[year]").
-
-TODO ajouter la signature
+#outline(
+  title: none,
+  target: figure.where(kind: image),
+)

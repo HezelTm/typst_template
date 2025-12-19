@@ -1,11 +1,11 @@
 /*
  * --------------------------------------------------------------------------------
- * File: /home/hezeltm/Projects/typst_template/report/tables/table_contents.typ
- * Project: /home/hezeltm/Projects/typst_template/report/tables
+ * File: /home/hezeltm/Projects/typst_template/report/section/conception.typ
+ * Project: /home/hezeltm/Projects/typst_template/report/section
  * Created Date: Monday, November 17th 2025, 6:53:51 pm
  * Author: Dimitri Julmy, dev@dimitri-julmy.com
  * --------------------------------------------------------------------------------
- * Last Modified: Thu Dec 18 2025
+ * Last Modified: Fri Dec 19 2025
  * Modified By: Dimitri Julmy
  * --------------------------------------------------------------------------------
  * Copyright (c) 2025 Dimitri Julmy
@@ -25,32 +25,11 @@
  * --------------------------------------------------------------------------------
  */
 
-// ---------- Imports
 
-#import "../metadata/metadata.typ": metadata
-#import "../metadata/translation.typ": tr_chapters
+// ---------- Conception
 
-// ---------- Table of Contents
+=== TODO (Remove) - Qu'est-ce que la Conception
 
-// Primary Heading format in the table
-#show outline.entry.where(level: 1): it => {
-  v(16pt, weak: true)
-  strong(it)
-}
+Avec la conception, vous montrez les travaux et les réflexions que vous avez faites avant de réaliser votre projet. Pour du logiciel, ça peut être de faire des diagrammes de classes, des algorithmes en pseudo-code ou des esquisses d'interface utilisateur. Vous démontrez au lecteur que vous avez pris le temps de bien réfléchir avant de commencer la réalisation.
 
-// Get the correct title
-// Get correct chapter traduction
-#let t_chap = (:)
-#for pair in tr_chapters.pairs() [
-  #let k = pair.at(0)
-  #let v = pair.at(1)
-  #let value = if metadata.lang == "fr" { v.fr } else { v.en }
-  #t_chap.insert(k, value)
-]
-
-// Format the Table of Contents
-#outline(
-  title: t_chap.table_content,
-  depth: 2,
-  indent: 2em,
-)
+source : #link("https://dev.to/supcik/guide-de-redaction-de-rapports-pour-les-etudiants-2g2k")[Guide de rédaction de rapports pour les étudiants]

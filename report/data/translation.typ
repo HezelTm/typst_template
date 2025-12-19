@@ -1,11 +1,11 @@
 /*
  * --------------------------------------------------------------------------------
- * File: /home/hezeltm/Projects/typst_template/report/metadata/translation.typ
- * Project: /home/hezeltm/Projects/typst_template/report/metadata
+ * File: /home/hezeltm/Projects/typst_template/report/data/translation.typ
+ * Project: /home/hezeltm/Projects/typst_template/report/data
  * Created Date: Wednesday, December 10th 2025, 10:38:58 am
  * Author: Dimitri Julmy, dev@dimitri-julmy.com
  * --------------------------------------------------------------------------------
- * Last Modified: Thu Dec 18 2025
+ * Last Modified: Fri Dec 19 2025
  * Modified By: Dimitri Julmy
  * --------------------------------------------------------------------------------
  * Copyright (c) 2025 Dimitri Julmy

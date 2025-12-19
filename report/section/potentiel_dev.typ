@@ -1,11 +1,11 @@
 /*
  * --------------------------------------------------------------------------------
- * File: /home/hezeltm/Projects/typst_template/report/tables/table_illustrations.typ
- * Project: /home/hezeltm/Projects/typst_template/report/tables
+ * File: /home/hezeltm/Projects/typst_template/report/section/potentiel_dev.typ
+ * Project: /home/hezeltm/Projects/typst_template/report/section
  * Created Date: Monday, November 17th 2025, 6:53:51 pm
  * Author: Dimitri Julmy, dev@dimitri-julmy.com
  * --------------------------------------------------------------------------------
- * Last Modified: Thu Dec 18 2025
+ * Last Modified: Fri Dec 19 2025
  * Modified By: Dimitri Julmy
  * --------------------------------------------------------------------------------
  * Copyright (c) 2025 Dimitri Julmy
@@ -25,23 +25,11 @@
  * --------------------------------------------------------------------------------
  */
 
-// ---------- Imports
 
-#import "../metadata/metadata.typ": colors
+// ---------- Potentiel Dev
 
-// ---------- Table of Illustrations
+=== TODO (Remove) - Qu'est-ce que les Évolutions possibles
 
-// Primary Heading format in the table
-#show outline.entry.where(level: 1): it => {
-  v(10pt, weak: true)
-  text(
-    size: 13pt,
-    weight: "semibold",
-    it
-  )
-}
+Pendant votre projet, vous aurez de nouvelles idées, mais vous ne pourrez pas toutes les réaliser par manque de temps. Ce chapitre vous permet de mentionner ces idées et de donner des pistes pour faire évoluer ou pour améliorer votre projet. 
 
-#outline(
-  title: none,
-  target: figure.where(kind: image),
-)
+source : #link("https://dev.to/supcik/guide-de-redaction-de-rapports-pour-les-etudiants-2g2k")[Guide de rédaction de rapports pour les étudiants]

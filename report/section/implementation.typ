@@ -1,11 +1,11 @@
 /*
  * --------------------------------------------------------------------------------
- * File: /home/hezeltm/Projects/typst_template/report/sections/conception.typ
- * Project: /home/hezeltm/Projects/typst_template/report/sections
+ * File: /home/hezeltm/Projects/typst_template/report/sections/implementation.typ
+ * Project: /home/hezeltm/Projects/typst_template/report/section
  * Created Date: Monday, November 17th 2025, 6:53:51 pm
  * Author: Dimitri Julmy, dev@dimitri-julmy.com
  * --------------------------------------------------------------------------------
- * Last Modified: Thu Dec 18 2025
+ * Last Modified: Fri Dec 19 2025
  * Modified By: Dimitri Julmy
  * --------------------------------------------------------------------------------
  * Copyright (c) 2025 Dimitri Julmy
@@ -26,10 +26,12 @@
  */
 
 
-// ---------- Conception
+// ---------- Implementation
 
-=== TODO (Remove) - Qu'est-ce que la Conception
+=== TODO (Remove) - Qu'est-ce que l’Implémentation
 
-Avec la conception, vous montrez les travaux et les réflexions que vous avez faites avant de réaliser votre projet. Pour du logiciel, ça peut être de faire des diagrammes de classes, des algorithmes en pseudo-code ou des esquisses d'interface utilisateur. Vous démontrez au lecteur que vous avez pris le temps de bien réfléchir avant de commencer la réalisation.
+Dans ce chapitre, vous décrivez la réalisation pratique de votre projet. Vous pouvez donner des précisions sur les structures de données que vous utilisez, la manière dont vous avez réalisé les algorithmes ou les détails de bibliothèques que vous avez utilisées.
+
+Pour un projet informatique, les commentaires dans votre code sont une bonne source d'inspiration pour rédiger ce chapitre.
 
 source : #link("https://dev.to/supcik/guide-de-redaction-de-rapports-pour-les-etudiants-2g2k")[Guide de rédaction de rapports pour les étudiants]

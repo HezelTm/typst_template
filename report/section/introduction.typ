@@ -1,11 +1,11 @@
 /*
  * --------------------------------------------------------------------------------
- * File: /home/hezeltm/Projects/typst_template/report/sections/implementation.typ
- * Project: /home/hezeltm/Projects/typst_template/report/sections
+ * File: /home/hezeltm/Projects/typst_template/report/section/introduction.typ
+ * Project: /home/hezeltm/Projects/typst_template/report/section
  * Created Date: Monday, November 17th 2025, 6:53:51 pm
  * Author: Dimitri Julmy, dev@dimitri-julmy.com
  * --------------------------------------------------------------------------------
- * Last Modified: Thu Dec 18 2025
+ * Last Modified: Fri Dec 19 2025
  * Modified By: Dimitri Julmy
  * --------------------------------------------------------------------------------
  * Copyright (c) 2025 Dimitri Julmy
@@ -26,12 +26,12 @@
  */
 
 
-// ---------- Implementation
+// ---------- Introduction
 
-=== TODO (Remove) - Qu'est-ce que l’Implémentation
+=== TODO (Remove) - Qu'est-ce que l'Introduction
 
-Dans ce chapitre, vous décrivez la réalisation pratique de votre projet. Vous pouvez donner des précisions sur les structures de données que vous utilisez, la manière dont vous avez réalisé les algorithmes ou les détails de bibliothèques que vous avez utilisées.
+L'introduction présente le contexte ou l'historique des travaux déjà faits sur le sujet. Vous décrivez dans ce chapitre la nature du problème ainsi que son importance.
 
-Pour un projet informatique, les commentaires dans votre code sont une bonne source d'inspiration pour rédiger ce chapitre.
+Il est intéressant d'également mentionner les objectifs dans l'introduction. Faites bien attention de ne pas confondre objectif avec activité. Un objectif est un délivrable que vous fournissez à la fin du projet (par exemple "un prototype" ou "une application). Vous décrirez l'objectif par un substantif (un nom). Une activité est une action qui vous permet d'atteindre l'objectif (par exemple "faire l'état de l'art", "développer" ou "tester"). L'activité est décrite par un verbe.
 
 source : #link("https://dev.to/supcik/guide-de-redaction-de-rapports-pour-les-etudiants-2g2k")[Guide de rédaction de rapports pour les étudiants]

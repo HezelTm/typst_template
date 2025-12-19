@@ -5,7 +5,7 @@
  * Created Date: Monday, November 17th 2025, 6:53:51 pm
  * Author: Dimitri Julmy, dev@dimitri-julmy.com
  * --------------------------------------------------------------------------------
- * Last Modified: Thu Dec 18 2025
+ * Last Modified: Fri Dec 19 2025
  * Modified By: Dimitri Julmy
  * --------------------------------------------------------------------------------
  * Copyright (c) 2025 Dimitri Julmy
@@ -28,8 +28,8 @@
 
 // ---------- Imports
 
-#import "metadata/metadata.typ": colors, metadata 
-#import "metadata/translation.typ": tr_chapters, tr_other
+#import "data/metadata.typ": colors, metadata 
+#import "data/translation.typ": tr_chapters, tr_other
 
 // ---------- General configuration of the report
 
@@ -73,7 +73,7 @@
 
 // ---------- Cover
 
-#include "sections/cover.typ"
+#include "section/cover.typ"
 
 // ---------- Page numbering & Heading formatting
 
@@ -158,7 +158,7 @@
 )
 #v(10pt)
 #set align(left)
-#include "tables/table_versions.typ"
+#include "table/table_versions.typ"
 
 // ---------- Executive Summary
 
@@ -175,72 +175,72 @@
 )
 #v(10pt)
 #set align(left)
-#include "sections/summary.typ"
+#include "section/summary.typ"
 
 // ---------- Table of Contents
 
 #pagebreak()
-#include "tables/table_contents.typ"
+#include "table/table_contents.typ"
 
 // ---------- Introduction
 
 #pagebreak()
 = #t_chap.introduction <introduction>
-#include "sections/introduction.typ"
+#include "section/introduction.typ"
 
 // ---------- Context
 
 #pagebreak()
 = #t_chap.contexte <context>
-#include "sections/context.typ"
+#include "section/context.typ"
 
 // ---------- Analysis
 
 #pagebreak()
 = #t_chap.analysis <analysis>
-#include "sections/analysis.typ"
+#include "section/analysis.typ"
 
 // ---------- Conception
 
 #pagebreak()
 = #t_chap.conception <conception>
-#include "sections/conception.typ"
+#include "section/conception.typ"
 
 // ---------- Implementation
 
 #pagebreak()
 = #t_chap.implementation <implementation>
-#include "sections/implementation.typ"
+#include "section/implementation.typ"
 
 // ---------- Testing and validation 
 
 #pagebreak()
 = #t_chap.testing <testing>
-#include "sections/testing.typ"
+#include "section/testing.typ"
 
 // ---------- Potential developments
 
 #pagebreak()
 = #t_chap.potential_dev <potentiel_dev>
-#include "sections/potentiel_dev.typ"
+#include "section/potentiel_dev.typ"
 
 // ---------- Conclusion
 
 #pagebreak()
 = #t_chap.conclusion <conclusion>
-#include "sections/conclusion.typ"
+#include "section/conclusion.typ"
 
 // ---------- Declaration of honor
 
 #pagebreak()
 = #t_chap.honor <honor>
-#include "sections/honor.typ"
+#include "section/honor.typ"
 
 // ---------- Acknowledgements
 
 #pagebreak()
 = #t_chap.acknowledgements <acknowledgements>
-#include "sections/acknowledgements.typ"
+#include "section/acknowledgements.typ"
 
 // ---------- Glossary
 
@@ -263,13 +263,13 @@
 
 #pagebreak()
 = #t_chap.table_references <table_references>
-#include "tables/table_references.typ"
+#include "table/table_references.typ"
 
 // ---------- Table of Illustrations
 
 #pagebreak()
 = #t_chap.table_illustrations <table_illustrations>
-#include "tables/table_illustrations.typ"
+#include "table/table_illustrations.typ"
 
 // ---------- Annexes
 

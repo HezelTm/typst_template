@@ -1,11 +1,11 @@
 /*
  * --------------------------------------------------------------------------------
- * File: /home/hezeltm/Projects/typst_template/report/sections/cover.typ
- * Project: /home/hezeltm/Projects/typst_template/report/sections
+ * File: /home/hezeltm/Projects/typst_template/report/section/cover.typ
+ * Project: /home/hezeltm/Projects/typst_template/report/section
  * Created Date: Monday, November 17th 2025, 6:53:51 pm
  * Author: Dimitri Julmy, dev@dimitri-julmy.com
  * --------------------------------------------------------------------------------
- * Last Modified: Thu Dec 18 2025
+ * Last Modified: Fri Dec 19 2025
  * Modified By: Dimitri Julmy
  * --------------------------------------------------------------------------------
  * Copyright (c) 2025 Dimitri Julmy
@@ -28,13 +28,13 @@
 
 // ---------- Imports
 
-#import "../metadata/metadata.typ" : colors, metadata, authors, experts, supervisors, versions
-#import "../metadata/translation.typ": tr_cover
+#import "../data/metadata.typ" : colors, metadata, authors, experts, supervisors, versions
+#import "../data/translation.typ": tr_cover
 
 // ---------- Content
 
 // Entity Logo
-#let logo_path = "/assets/logos/" + str(metadata.logo)
+#let logo_path = "/asset/logos/" + str(metadata.logo)
 #align(
   center,
   image(logo_path, width: 50%)

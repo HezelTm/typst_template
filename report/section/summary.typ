@@ -1,11 +1,11 @@
 /*
  * --------------------------------------------------------------------------------
- * File: /home/hezeltm/Projects/typst_template/report/sections/testing.typ
- * Project: /home/hezeltm/Projects/typst_template/report/sections
+ * File: /home/hezeltm/Projects/typst_template/report/section/summary.typ
+ * Project: /home/hezeltm/Projects/typst_template/report/section
  * Created Date: Monday, November 17th 2025, 6:53:51 pm
  * Author: Dimitri Julmy, dev@dimitri-julmy.com
  * --------------------------------------------------------------------------------
- * Last Modified: Thu Dec 18 2025
+ * Last Modified: Fri Dec 19 2025
  * Modified By: Dimitri Julmy
  * --------------------------------------------------------------------------------
  * Copyright (c) 2025 Dimitri Julmy
@@ -25,22 +25,15 @@
  * --------------------------------------------------------------------------------
  */
 
-// ---------- Testing
 
-=== TODO (Remove) - Qu'est-ce que les Tests et Validations
+// ---------- Executive Summary
 
-Le chapitre des tests et validations est souvent négligé. On n'y pense qu'à la fin et on n'a plus le temps de bien l'écrire. Et souvent, on ne sait pas trop quoi écrire, car on a aussi oublié de faire les tests en premier lieu.
+=== TODO (Remove) - Qu'est-ce qu'un Executive Summary
 
-Un bon ingénieur sait l'importance de délivrer un produit de qualité et fiable. Il planifie les tests dès le début du projet et démontre dans ce chapitre que son système satisfait aux standards.
+Les lecteurs commencent très souvent par lire le sommaire exécutif de votre rapport. Ce sommaire permet au lecteur de savoir s’il va lire la suite de votre rapport ou non, et ça vaut la peine d'en soigner la rédaction.
 
-Pour un projet informatique, ce chapitre décrit les tests unitaires, les tests d'intégration et les tests système. Vous pouvez décrire les résultats des tests dans une table en indiquant :
+Ne dépassez pas une demi-page pour le sommaire. Expliquez brièvement le contexte, l'approche que vous avez eu pour résoudre les problèmes et mentionnez vos résultats.
 
-    Le nom du test
-    La fonctionnalité qui est vérifiée par le test
-    Le résultat attendu
-    Le résultat obtenu
-    Un commentaire
-
-Décrivez aussi les mécanismes que vous avez mis en place pour vérifier votre programme (CI/CD, analyse statique de code...) et évaluez les performances de votre solution (en temps CPU et en mémoire).
+Le sommaire exécutif est souvent la dernière chose que vous écrirez, mais il doit figurer au début de votre rapport. C'est également une bonne idée de traduire ce sommaire dans une deuxième langue (par exemple, en français si le rapport est en anglais).
 
 source : #link("https://dev.to/supcik/guide-de-redaction-de-rapports-pour-les-etudiants-2g2k")[Guide de rédaction de rapports pour les étudiants]

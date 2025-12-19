@@ -1,11 +1,11 @@
 /*
  * --------------------------------------------------------------------------------
- * File: /home/hezeltm/Projects/typst_template/report/sections/potentiel_dev.typ
- * Project: /home/hezeltm/Projects/typst_template/report/sections
+ * File: /home/hezeltm/Projects/typst_template/report/section/analysis.typ
+ * Project: /home/hezeltm/Projects/typst_template/report/section
  * Created Date: Monday, November 17th 2025, 6:53:51 pm
  * Author: Dimitri Julmy, dev@dimitri-julmy.com
  * --------------------------------------------------------------------------------
- * Last Modified: Thu Dec 18 2025
+ * Last Modified: Fri Dec 19 2025
  * Modified By: Dimitri Julmy
  * --------------------------------------------------------------------------------
  * Copyright (c) 2025 Dimitri Julmy
@@ -26,10 +26,10 @@
  */
 
 
-// ---------- Potentiel Dev
+// ---------- Analysis
 
-=== TODO (Remove) - Qu'est-ce que les Évolutions possibles
+=== TODO (Remove) - Qu'est-ce que l'Analyse
 
-Pendant votre projet, vous aurez de nouvelles idées, mais vous ne pourrez pas toutes les réaliser par manque de temps. Ce chapitre vous permet de mentionner ces idées et de donner des pistes pour faire évoluer ou pour améliorer votre projet. 
+Dans l'analyse, vous faites l'état de l'art dans le domaine de votre projet. Vous étudiez les outils et les "frameworks" disponibles et vous étudiez ce qui a déjà été fait. Vous prenez en compte les contraintes du projet et vous comparez les options. À la fin de l'analyse, le lecteur doit être convaincu que vous connaissez votre sujet et que vous avez su faire les bons choix.
 
 source : #link("https://dev.to/supcik/guide-de-redaction-de-rapports-pour-les-etudiants-2g2k")[Guide de rédaction de rapports pour les étudiants]

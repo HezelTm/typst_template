@@ -1,11 +1,11 @@
 /*
  * --------------------------------------------------------------------------------
- * File: /home/hezeltm/Projects/typst_template/report/sections/conclusion.typ
- * Project: /home/hezeltm/Projects/typst_template/report/sections
+ * File: /home/hezeltm/Projects/typst_template/report/section/testing.typ
+ * Project: /home/hezeltm/Projects/typst_template/report/section
  * Created Date: Monday, November 17th 2025, 6:53:51 pm
  * Author: Dimitri Julmy, dev@dimitri-julmy.com
  * --------------------------------------------------------------------------------
- * Last Modified: Thu Dec 18 2025
+ * Last Modified: Fri Dec 19 2025
  * Modified By: Dimitri Julmy
  * --------------------------------------------------------------------------------
  * Copyright (c) 2025 Dimitri Julmy
@@ -25,15 +25,22 @@
  * --------------------------------------------------------------------------------
  */
 
+// ---------- Testing
 
-// ---------- Conclusion
+=== TODO (Remove) - Qu'est-ce que les Tests et Validations
 
-=== TODO (Remove) - Qu'est-ce que la conclusion
+Le chapitre des tests et validations est souvent négligé. On n'y pense qu'à la fin et on n'a plus le temps de bien l'écrire. Et souvent, on ne sait pas trop quoi écrire, car on a aussi oublié de faire les tests en premier lieu.
 
-La conclusion se concentre sur les résultats de votre projet. Vous écrivez comment vous avez répondu aux attentes du mandant et vous revenez sur les objectifs initiaux. Si vous n'avez pas atteint les objectifs, expliquez pourquoi et décrivez ce que vous avez fait à la place.
+Un bon ingénieur sait l'importance de délivrer un produit de qualité et fiable. Il planifie les tests dès le début du projet et démontre dans ce chapitre que son système satisfait aux standards.
 
-Pensez à bien soigner la conclusion. Certains lecteurs avertis commencent par lire le sommaire exécutif, puis ils lisent la conclusion, et s’ils aiment ce qu'ils lisent, alors ils lisent l'ensemble de votre rapport.
+Pour un projet informatique, ce chapitre décrit les tests unitaires, les tests d'intégration et les tests système. Vous pouvez décrire les résultats des tests dans une table en indiquant :
 
-Complétez ce chapitre avec une conclusion personnelle. Faites preuve d'imagination et évitez de commencer par "j'ai bien aimé ce projet..." Vous pouvez aussi parler de comment vous avez géré le projet et dire ce que vous feriez différemment. N'hésitez pas à écrire cette partie à la première personne et à écrire "Je ..." 
+    Le nom du test
+    La fonctionnalité qui est vérifiée par le test
+    Le résultat attendu
+    Le résultat obtenu
+    Un commentaire
+
+Décrivez aussi les mécanismes que vous avez mis en place pour vérifier votre programme (CI/CD, analyse statique de code...) et évaluez les performances de votre solution (en temps CPU et en mémoire).
 
 source : #link("https://dev.to/supcik/guide-de-redaction-de-rapports-pour-les-etudiants-2g2k")[Guide de rédaction de rapports pour les étudiants]

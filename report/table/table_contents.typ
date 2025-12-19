@@ -1,11 +1,11 @@
 /*
  * --------------------------------------------------------------------------------
- * File: /home/hezeltm/Projects/typst_template/report/metadata/enum.typ
- * Project: /home/hezeltm/Projects/typst_template/report/metadata
- * Created Date: Wednesday, December 10th 2025, 8:53:39 am
+ * File: /home/hezeltm/Projects/typst_template/report/table/table_contents.typ
+ * Project: /home/hezeltm/Projects/typst_template/report/table
+ * Created Date: Monday, November 17th 2025, 6:53:51 pm
  * Author: Dimitri Julmy, dev@dimitri-julmy.com
  * --------------------------------------------------------------------------------
- * Last Modified: Thu Dec 18 2025
+ * Last Modified: Fri Dec 19 2025
  * Modified By: Dimitri Julmy
  * --------------------------------------------------------------------------------
  * Copyright (c) 2025 Dimitri Julmy
@@ -25,21 +25,32 @@
  * --------------------------------------------------------------------------------
  */
 
+// ---------- Imports
 
-// ---------- Enums
+#import "../data/metadata.typ": metadata
+#import "../data/translation.typ": tr_chapters
 
-#let lang = (
-  en: "en",
-  fr: "fr",
-)
+// ---------- Table of Contents
 
-#let gender = (
-  m: "male",
-  f: "female",
-)
+// Primary Heading format in the table
+#show outline.entry.where(level: 1): it => {
+  v(16pt, weak: true)
+  strong(it)
+}
 
-#let title = (
-  eng: "Engineer",
-  doc: "Doctor",
-  prf: "Professor"
+// Get the correct title
+// Get correct chapter traduction
+#let t_chap = (:)
+#for pair in tr_chapters.pairs() [
+  #let k = pair.at(0)
+  #let v = pair.at(1)
+  #let value = if metadata.lang == "fr" { v.fr } else { v.en }
+  #t_chap.insert(k, value)
+]
+
+// Format the Table of Contents
+#outline(
+  title: t_chap.table_content,
+  depth: 2,
+  indent: 2em,
 )
