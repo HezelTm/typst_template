@@ -5,7 +5,7 @@
  * Created Date: Tuesday, November 18th 2025, 8:04:27 pm
  * Author: Dimitri Julmy, dev@dimitri-julmy.com
  * --------------------------------------------------------------------------------
- * Last Modified: Thu Dec 18 2025
+ * Last Modified: Fri Dec 19 2025
  * Modified By: Dimitri Julmy
  * --------------------------------------------------------------------------------
  * Copyright (c) 2025 Dimitri Julmy
@@ -58,7 +58,7 @@
 )
 
 // Page header
-#let logo_path = "/assets/" + str(agenda.logo)
+#let logo_path = "/asset/" + str(agenda.logo)
 #set page(
   header: align(center)[#image(logo_path, width: 30%)]
 )
