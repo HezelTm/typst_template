@@ -69,7 +69,12 @@
 #text(
   fill: black,
   size: 18pt,
-)[Carolina Inácio Pereira, Dimitri Julmy]\
+)[
+  #for a in authors {
+    a.firstname + " " + a.lastname
+    if a != authors.last() {", "}
+  }
+]\
 #text(
   fill: colors.c1,
   size: 18pt,
@@ -81,11 +86,15 @@
 #text(
   fill: black,
   size: 13pt,
-)[University of Applied Sciences and Arts of Western Switzerland (HES-SO)]\
+)[#metadata.entity (#metadata.entity_acronym)]\
 #text(
   fill: black,
   size: 13pt,
-)[Master of Science in Engineering (MSE)]\
+)[#metadata.section (#metadata.section_acronym)]\
+#text(
+  fill: black,
+  size: 13pt,
+)[#metadata.profil (#metadata.profil_acronym)]\
 
 // ----- Dates
 
@@ -97,7 +106,8 @@
     stroke: none,
     inset: 3pt,
     align: left + horizon,
-    [Creation date], [#datetime(year: 2025, month: 11, day: 18).display()],
+    [Repository URI], [#metadata.git_url],
+    [Creation date], [#metadata.date_creation.display()],
     [Submission date], [#datetime.today().display()],
   )
 )

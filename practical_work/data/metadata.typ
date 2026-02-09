@@ -33,10 +33,10 @@
   logo: "logo_hes-so.png",
   type: "Report",
   scope: "Scope",
-  name: "Exercise AC03 - Metasploit",
-  course: "TSM - Cyber Security",
+  name: "Practical Work Name",
+  course: "Course Name",
   git_url: "https://gitlab-url.com",
-  date_creation: datetime(year: 2025, month: 09, day: 19),
+  date_creation: datetime(year: 2025, month: 12, day: 18),
   date_due: datetime.today(),
   entity: "University of Applied Sciences and Arts of Western Switzerland",
   entity_acronym: "HES-SO",
@@ -44,8 +44,7 @@
   section_acronym: "MSE",
   profil: "Information and cyber security",
   profil_acronym: "ICS",
-  locality: "Fribourg",
-  year: "3rd year",
+  locality: "Lausanne",
 )
 
 // ---------- Persons
