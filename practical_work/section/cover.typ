@@ -102,7 +102,7 @@
 #align(
   left,
   table(
-    columns: (20%, 20%),
+    columns: (20%, 80%),
     stroke: none,
     inset: 3pt,
     align: left + horizon,
