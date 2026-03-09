@@ -106,7 +106,7 @@
     stroke: none,
     inset: 3pt,
     align: left + horizon,
-    [Repository URI], [#metadata.git_url],
+    [Repository URI], [#link(metadata.git_url)[#metadata.git_url]],
     [Creation date], [#metadata.date_creation.display()],
     [Submission date], [#datetime.today().display()],
   )

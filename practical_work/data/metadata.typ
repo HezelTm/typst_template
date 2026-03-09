@@ -36,7 +36,7 @@
   name: "Practical Work Name",
   course: "Course Name",
   git_url: "https://gitlab-url.com",
-  date_creation: datetime(year: 2025, month: 12, day: 18),
+  date_creation: datetime(year: 2026, month: 03, day: 09),
   date_due: datetime.today(),
   entity: "University of Applied Sciences and Arts of Western Switzerland",
   entity_acronym: "HES-SO",
